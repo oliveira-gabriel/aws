@@ -1,0 +1,23 @@
+{
+  "name": "demo12-vpc-aurora",
+  "version": "1.0.0",
+  "description": "<!-- title: 'AWS NodeJS Example' description: 'This template demonstrates how to deploy a NodeJS function running on AWS Lambda using the traditional Serverless Framework.' layout: Doc framework: v2 platform: AWS language: nodeJS priority: 1 authorLink: 'https://github.com/serverless' authorName: 'Serverless, inc.' authorAvatar: 'https://avatars1.githubusercontent.com/u/13742415?s=200&v=4' -->",
+  "main": "handler.js",
+  "scripts": {
+    "start": "npx nodemon --exec npm run offline",
+    "test": "sls invoke test --path test",
+    "offline": "npx sls offline start --host 0.0.0.0"
+  },
+  "dependencies": {
+    "faker": "^5.5.3",
+    "mysql2": "^2.3.2",
+    "sequelize": "^6.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14",
+    "serverless": "^2.64.1",
+    "serverless-offline": "^8.2.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
